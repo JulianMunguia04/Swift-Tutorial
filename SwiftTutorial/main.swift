@@ -33,3 +33,10 @@ print(max(3,8))
 
 /// Returns the sum of two integers
 /// - Parameters: a, b
+
+let constant = 10
+var counter =  0
+counter+=1
+print(constant, counter)
+
+
