@@ -30,3 +30,6 @@ print(max(3,8))
 /*
  multi-line
 */
+
+/// Returns the sum of two integers
+/// - Parameters: a, b
