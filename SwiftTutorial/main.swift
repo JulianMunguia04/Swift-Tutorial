@@ -10,3 +10,9 @@ import Foundation
 print("Hello, World!")
 
 print("test")
+
+for n in 1...3{
+    print(n, terminator: " ")// prints on one line
+}
+print("done")
+
