@@ -20,7 +20,7 @@ let a = 7, b = 3
 print(a, b)
 print("a=\(a), b=\(b)")
 
-let x = -7
+//let x = -7
 print(abs(x))
 print(min(3,8))
 print(max(3,8))
@@ -39,4 +39,5 @@ var counter =  0
 counter+=1
 print(constant, counter)
 
-
+let x = 10
+let y: Int = 20
