@@ -16,9 +16,9 @@ for n in 1...3{
 }
 print("done")
 
-let a = 7, b = 3
-print(a, b)
-print("a=\(a), b=\(b)")
+//let a = 7, b = 3
+//print(a, b)
+//print("a=\(a), b=\(b)")
 
 //let x = -7
 print(abs(x))
@@ -52,3 +52,7 @@ let second = "Swift"
 print(first + ", " + second)
 //Interpolation
 print("\(first), \(second)")
+
+let a = 1, b = 2, c = 3
+print(a,b,c, separator: ", ", terminator: "; ")
+print("done") //prints on the same line
