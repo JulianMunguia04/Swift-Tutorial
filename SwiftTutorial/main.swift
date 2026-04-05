@@ -41,3 +41,7 @@ print(constant, counter)
 
 let x = 10
 let y: Int = 20
+
+var nickname: String? = nil
+nickname = "KJ"
+print(nickname ?? "None")
