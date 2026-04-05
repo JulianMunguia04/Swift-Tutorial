@@ -45,3 +45,10 @@ let y: Int = 20
 var nickname: String? = nil
 nickname = "KJ"
 print(nickname ?? "None")
+
+let first = "Hello"
+let second = "Swift"
+//Concatonation
+print(first + ", " + second)
+//Interpolation
+print("\(first), \(second)")
