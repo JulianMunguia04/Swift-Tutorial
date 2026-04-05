@@ -24,3 +24,9 @@ let x = -7
 print(abs(x))
 print(min(3,8))
 print(max(3,8))
+
+//Comment
+
+/*
+ multi-line
+*/
