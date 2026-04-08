@@ -57,8 +57,8 @@ print("\(first), \(second)")
 //print(a,b,c, separator: ", ", terminator: "; ")
 //print("done") //prints on the same line
 
-var x = 1, y = 2, z = 3
-let a = 10, b = 20
+//var x = 1, y = 2, z = 3
+//let a = 10, b = 20
 
 var i: Int = 1, j: Int = 2
 let firstName: String = "Robin", lastName: String = "Refsnes"
@@ -93,4 +93,14 @@ let aString = "Hello"
 
 let inferred = 10         //Int Inferred
 let annotated: Double = 3 // Double explicit
+
+//let a = 5, b = 2
+//print (a - b)
+//print(Double(a) / Double(b))
+
+let a = 7, b = 3
+print(a / b) //2 (integer division)
+print(a % b) //1 remainder
+
+
 
