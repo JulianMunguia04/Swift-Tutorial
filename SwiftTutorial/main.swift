@@ -39,8 +39,8 @@ var counter =  0
 counter+=1
 print(constant, counter)
 
-let x = 10
-let y: Int = 20
+//let x = 10
+//let y: Int = 20
 
 var nickname: String? = nil
 nickname = "KJ"
@@ -52,7 +52,14 @@ let second = "Swift"
 print(first + ", " + second)
 //Interpolation
 print("\(first), \(second)")
+//
+//let a = 1, b = 2, c = 3
+//print(a,b,c, separator: ", ", terminator: "; ")
+//print("done") //prints on the same line
 
-let a = 1, b = 2, c = 3
-print(a,b,c, separator: ", ", terminator: "; ")
-print("done") //prints on the same line
+var x = 1, y = 2, z = 3
+let a = 10, b = 20
+
+var i: Int = 1, j: Int = 2
+let firstName: String = "Robin", lastName: String = "Refsnes"
+print(i + j, firstName, lastName)
