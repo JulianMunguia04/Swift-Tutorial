@@ -98,9 +98,19 @@ let annotated: Double = 3 // Double explicit
 //print (a - b)
 //print(Double(a) / Double(b))
 
-let a = 7, b = 3
-print(a / b) //2 (integer division)
-print(a % b) //1 remainder
+//let a = 7, b = 3
+//print(a / b) //2 (integer division)
+//print(a % b) //1 remainder
 
+//let a = true, b = false
+//print(a && b) //false
+//print(a || b) //true
+//print(!a)   //false
+ 
+
+let a = 5, b = 3
+print (a > b)   //true
+print(a == b)   //false
+print(a != b)   //true
 
 
