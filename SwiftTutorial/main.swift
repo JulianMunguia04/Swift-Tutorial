@@ -63,3 +63,11 @@ let a = 10, b = 20
 var i: Int = 1, j: Int = 2
 let firstName: String = "Robin", lastName: String = "Refsnes"
 print(i + j, firstName, lastName)
+
+let name = "Swift"
+let π = 3.14
+let _hidden = true
+
+let `switch` = "OK"
+let 🐕 = "dog"
+print(`switch`)
