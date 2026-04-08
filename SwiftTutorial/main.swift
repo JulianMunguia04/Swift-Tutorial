@@ -81,3 +81,7 @@ print(nums)
 
 let fixed = [1,2]
 // fixed.append(3) //Error
+
+var count = 0
+count += 1
+print("Count \(count)")
