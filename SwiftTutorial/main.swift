@@ -71,3 +71,13 @@ let _hidden = true
 let `switch` = "OK"
 let 🐕 = "dog"
 print(`switch`)
+
+let pi = 3.14159
+let maxCount = 100
+
+var nums = [1,2]
+nums.append(3)
+print(nums)
+
+let fixed = [1,2]
+// fixed.append(3) //Error
