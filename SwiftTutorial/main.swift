@@ -108,9 +108,22 @@ let annotated: Double = 3 // Double explicit
 //print(!a)   //false
  
 
-let a = 5, b = 3
-print (a > b)   //true
-print(a == b)   //false
-print(a != b)   //true
+//let a = 5, b = 3
+//print (a > b)   //true
+//print(a == b)   //false
+//print(a != b)   //true
 
+//let ch: Character = "A"
+//print(ch)
+//let word = "Swift"
+//print(word.count)
 
+let ch: Character = "A"
+let s = String(ch)
+print(s)              // "A"
+
+let heart: Character = "❤️"
+print(heart)
+let flag: Character = "🇳🇴" // composed of two regional indicators
+print(flag)
+print("e\u{301}".count) // 1 (e + combining acute accent)
