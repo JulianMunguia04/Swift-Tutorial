@@ -85,3 +85,12 @@ let fixed = [1,2]
 var count = 0
 count += 1
 print("Count \(count)")
+
+let anInt = 42
+let aDouble = 3.14
+let aBool = true
+let aString = "Hello"
+
+let inferred = 10         //Int Inferred
+let annotated: Double = 3 // Double explicit
+
