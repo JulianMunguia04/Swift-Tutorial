@@ -118,12 +118,27 @@ let annotated: Double = 3 // Double explicit
 //let word = "Swift"
 //print(word.count)
 
-let ch: Character = "A"
-let s = String(ch)
-print(s)              // "A"
+//let ch: Character = "A"
+//let s = String(ch)
+//print(s)              // "A"
+//
+//let heart: Character = "❤️"
+//print(heart)
+//let flag: Character = "🇳🇴" // composed of two regional indicators
+//print(flag)
+//print("e\u{301}".count) // 1 (e + combining acute accent)
 
-let heart: Character = "❤️"
-print(heart)
-let flag: Character = "🇳🇴" // composed of two regional indicators
-print(flag)
-print("e\u{301}".count) // 1 (e + combining acute accent)
+let items: [Any] = [1, "Swift"]
+for item in items {
+  if let i = item as? Int {
+    print("Int: \(i)")
+  } else if let s = item as? String {
+    print("String: \(s)")
+  }
+}
+
+let value: Any = 42
+//let i = value as! Int   // forced downcast
+print(i)
+
+
