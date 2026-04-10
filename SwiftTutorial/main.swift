@@ -164,3 +164,19 @@ print(a / b)        // integer division
 print(7 % 3)   // 1
 print(8 % 2)   // 0
 print(10 % 6)  // 4
+
+var total = 10
+total += 5
+print(total)
+total -= 3
+print(total)
+total *= 2
+print(total)
+total /= 4
+print(total)
+
+var s = "Hello"
+s += ", Swift"
+print(s)        //Hello, Swift
+
+
