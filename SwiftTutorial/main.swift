@@ -141,14 +141,14 @@ let value: Any = 42
 //let i = value as! Int   // forced downcast
 print(i)
 
-let a = 5, b = 2
-// Arithmetic
-print(a + b)
-// Comparison
-print(a > b)
-// Logical
-let t = true, f = false
-print(t && !f)
+//let a = 5, b = 2
+//// Arithmetic
+//print(a + b)
+//// Comparison
+//print(a > b)
+//// Logical
+//let t = true, f = false
+//print(t && !f)
 
 let flag = false
 print(!flag)              // unary NOT
@@ -156,5 +156,11 @@ let score = 85
 let label = (score >= 90) ? "A" : "Not A"
 print(label)
 
+let a = 7, b = 3
+print(a - b)
+print(a * b)
+print(a / b)        // integer division
 
-
+print(7 % 3)   // 1
+print(8 % 2)   // 0
+print(10 % 6)  // 4
