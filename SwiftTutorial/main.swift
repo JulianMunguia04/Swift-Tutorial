@@ -196,13 +196,25 @@ let isAdmin = false
 print(isOwner && isAdmin)
 print(true && true)
 
-let a = true
-let b = false
-print(a || b)
-print(false || false)
+//let a = true
+//let b = false
+//print(a || b)
+//print(false || false)
 
 let flag = false
 print(!flag)
 print(!true)
 
+print(2 + 3 * 4)
+print((2 + 3) * 4)
+print(true || false && false)
+print((true || false) && false)
+
+let a = true
+let b = false
+let c = true
+
+print(a || b && c)         // true (&& before ||)
+print((a || b) && c)       // true
+print(a && b || c)         // true ((a && b) || c)
 
