@@ -150,11 +150,11 @@ print(i)
 //let t = true, f = false
 //print(t && !f)
 
-let flag = false
-print(!flag)              // unary NOT
-let score = 85
-let label = (score >= 90) ? "A" : "Not A"
-print(label)
+//let flag = false
+//print(!flag)              // unary NOT
+//let score = 85
+//let label = (score >= 90) ? "A" : "Not A"
+//print(label)
 
 //let a = 7, b = 3
 //print(a - b)
@@ -180,13 +180,29 @@ s += ", Swift"
 print(s)        //Hello, Swift
 
 
-let a = 5, b = 2
-print(a == b)
-print(a != b)
-print(a > b)
-print(a < b)
-print(a >= 5)
+//let a = 5, b = 2
+//print(a == b)
+//print(a != b)
+//print(a > b)
+//print(a < b)
+//print(a >= 5)
 
 print("apple" < "banana")  // true
 print("Swift" == "Swift")  // true
 print("cat" > "car")       // true
+
+let isOwner = true
+let isAdmin = false
+print(isOwner && isAdmin)
+print(true && true)
+
+let a = true
+let b = false
+print(a || b)
+print(false || false)
+
+let flag = false
+print(!flag)
+print(!true)
+
+
