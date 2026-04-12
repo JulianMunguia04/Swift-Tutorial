@@ -156,10 +156,10 @@ let score = 85
 let label = (score >= 90) ? "A" : "Not A"
 print(label)
 
-let a = 7, b = 3
-print(a - b)
-print(a * b)
-print(a / b)        // integer division
+//let a = 7, b = 3
+//print(a - b)
+//print(a * b)
+//print(a / b)        // integer division
 
 print(7 % 3)   // 1
 print(8 % 2)   // 0
@@ -180,3 +180,13 @@ s += ", Swift"
 print(s)        //Hello, Swift
 
 
+let a = 5, b = 2
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= 5)
+
+print("apple" < "banana")  // true
+print("Swift" == "Swift")  // true
+print("cat" > "car")       // true
