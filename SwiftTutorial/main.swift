@@ -128,14 +128,14 @@ let annotated: Double = 3 // Double explicit
 //print(flag)
 //print("e\u{301}".count) // 1 (e + combining acute accent)
 
-let items: [Any] = [1, "Swift"]
-for item in items {
-  if let i = item as? Int {
-    print("Int: \(i)")
-  } else if let s = item as? String {
-    print("String: \(s)")
-  }
-}
+//let items: [Any] = [1, "Swift"]
+//for item in items {
+//  if let i = item as? Int {
+//    print("Int: \(i)")
+//  } else if let s = item as? String {
+//    print("String: \(s)")
+//  }
+//}
 
 let value: Any = 42
 //let i = value as! Int   // forced downcast
@@ -276,3 +276,14 @@ for scalar in m.unicodeScalars {
   print(scalar.value)   // 101, 769
 }
 
+var numbers = [10, 20, 30]
+print(numbers[0])         // 10
+numbers.append(40)
+print(numbers.count)      // 4
+print(numbers.isEmpty)    // false
+
+var items = ["A", "B", "C"]
+items.insert("X", at: 1)
+print(items)
+items.remove(at: 2)
+print(items)
