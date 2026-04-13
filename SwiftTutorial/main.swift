@@ -46,12 +46,12 @@ var nickname: String? = nil
 nickname = "KJ"
 print(nickname ?? "None")
 
-let first = "Hello"
-let second = "Swift"
-//Concatonation
-print(first + ", " + second)
-//Interpolation
-print("\(first), \(second)")
+//let first = "Hello"
+//let second = "Swift"
+////Concatonation
+//print(first + ", " + second)
+////Interpolation
+//print("\(first), \(second)")
 //
 //let a = 1, b = 2, c = 3
 //print(a,b,c, separator: ", ", terminator: "; ")
@@ -232,5 +232,12 @@ let end = text.index(start, offsetBy: 3)
 let sub = text[start..<end]  // "Swi"
 print(sub)
 print(text.uppercased())
+
+let first = "Hello"
+let second = "Swift"
+// Concatenation
+print(first + " " + second)
+// Interpolation
+print("\(first), \(second)!")
 
 
