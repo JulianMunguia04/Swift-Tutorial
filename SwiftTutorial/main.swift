@@ -176,8 +176,8 @@ total /= 4
 print(total)
 
 var s = "Hello"
-s += ", Swift"
-print(s)        //Hello, Swift
+//s += ", Swift"
+//print(s)        //Hello, Swift
 
 
 //let a = 5, b = 2
@@ -265,4 +265,14 @@ Roses are red,
 Violets are blue.
 """
 print(poem)
+
+let e1 = "é"
+let e2 = "e\u{301}"   // e + COMBINING ACUTE ACCENT
+print(e1 == e2)
+print(e2)
+
+let m = "e\u{301}"
+for scalar in m.unicodeScalars {
+  print(scalar.value)   // 101, 769
+}
 
