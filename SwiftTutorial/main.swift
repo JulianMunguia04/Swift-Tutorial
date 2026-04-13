@@ -255,3 +255,14 @@ let s2 = "abc"
 let n2 = Int(s2)           // nil (not a number)
 print(n2 == nil)
 
+print("Hello\nSwift")
+print("A\tB\tC")
+print("\"quoted\"")
+print("\\")
+
+let poem = """
+Roses are red,
+Violets are blue.
+"""
+print(poem)
+
