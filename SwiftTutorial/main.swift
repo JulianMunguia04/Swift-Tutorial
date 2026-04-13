@@ -218,20 +218,20 @@ print(a || b && c)         // true (&& before ||)
 print((a || b) && c)       // true
 print(a && b || c)         // true ((a && b) || c)
 
-let s1 = "Hello"
-let s2 = "Swift"
-print(s1 + " " + s2)
-print("\(s1), \(s2)!")
-let word = "Swift"
-print(word.count)
-print(s1.isEmpty)
+//let s1 = "Hello"
+//let s2 = "Swift"
+//print(s1 + " " + s2)
+//print("\(s1), \(s2)!")
+//let word = "Swift"
+//print(word.count)
+//print(s1.isEmpty)
 
-let text = "Swift"
-let start = text.startIndex
-let end = text.index(start, offsetBy: 3)
-let sub = text[start..<end]  // "Swi"
-print(sub)
-print(text.uppercased())
+//let text = "Swift"
+//let start = text.startIndex
+//let end = text.index(start, offsetBy: 3)
+//let sub = text[start..<end]  // "Swi"
+//print(sub)
+//print(text.uppercased())
 
 let first = "Hello"
 let second = "Swift"
@@ -240,4 +240,18 @@ print(first + " " + second)
 // Interpolation
 print("\(first), \(second)!")
 
+let age = 5
+print("Age: \(age)")          // interpolation
+let text = "You are " + String(age)
+print(text)
+let pie = 3.14
+print("pi = \(pie)")
+
+let s1 = "123"
+let n1 = Int(s1)           // Int?
+print(n1 ?? 0)
+
+let s2 = "abc"
+let n2 = Int(s2)           // nil (not a number)
+print(n2 == nil)
 
