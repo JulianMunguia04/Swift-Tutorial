@@ -287,3 +287,17 @@ items.insert("X", at: 1)
 print(items)
 items.remove(at: 2)
 print(items)
+
+//let fruits = ["Apple", "Banana", "Cherry"]
+//for fruit in fruits {
+//  print(fruit)
+//}
+//for (i, fruit) in fruits.enumerated() {
+//  print("\(i): \(fruit)")
+//}
+
+let fruits = ["Apple", "Banana", "Cherry"]
+fruits.forEach { print($0) }
+fruits.enumerated().forEach { print("\($0.offset): \($0.element)") }
+
+
