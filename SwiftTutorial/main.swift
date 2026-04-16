@@ -75,9 +75,9 @@ print(`switch`)
 let pi = 3.14159
 let maxCount = 100
 
-var nums = [1,2]
-nums.append(3)
-print(nums)
+//var nums = [1,2]
+//nums.append(3)
+//print(nums)
 
 let fixed = [1,2]
 // fixed.append(3) //Error
@@ -300,4 +300,16 @@ let fruits = ["Apple", "Banana", "Cherry"]
 fruits.forEach { print($0) }
 fruits.enumerated().forEach { print("\($0.offset): \($0.element)") }
 
+//let nums = [10, 20, 30, 40, 50]
+//let middle = nums[1...3]          // ArraySlice<Int>
+//print(middle)                     // [20, 30, 40]
+//let copy = Array(middle)          // Array<Int>
+//print(copy)
 
+let nums = [10, 20, 30, 40, 50]
+let slice = nums[1..<3]   // indices 1 and 2
+print(slice)               // [20, 30]
+
+let arr = [0, 1, 2, 3, 4]
+print(arr[...2])  // first three elements (0...2)
+print(arr[2...])  // from index 2 to the end
