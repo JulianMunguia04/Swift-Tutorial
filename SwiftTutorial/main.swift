@@ -282,11 +282,11 @@ numbers.append(40)
 print(numbers.count)      // 4
 print(numbers.isEmpty)    // false
 
-var items = ["A", "B", "C"]
-items.insert("X", at: 1)
-print(items)
-items.remove(at: 2)
-print(items)
+//var items = ["A", "B", "C"]
+//items.insert("X", at: 1)
+//print(items)
+//items.remove(at: 2)
+//print(items)
 
 //let fruits = ["Apple", "Banana", "Cherry"]
 //for fruit in fruits {
@@ -313,3 +313,20 @@ print(slice)               // [20, 30]
 let arr = [0, 1, 2, 3, 4]
 print(arr[...2])  // first three elements (0...2)
 print(arr[2...])  // from index 2 to the end
+
+//let items = [10, 20, 30]
+//print(items.startIndex)       // 0
+//for i in items.indices {
+//  print("index: \(i), value: \(items[i])")
+//}
+
+//let items = [10, 20, 30]
+//print(items[0])   // OK
+//// print(items[3]) // out of bounds
+
+let items = [10, 20, 30]
+let lastIndex = items.index(before: items.endIndex)
+print(lastIndex)        // 2
+print(items[lastIndex]) // 30
+
+
