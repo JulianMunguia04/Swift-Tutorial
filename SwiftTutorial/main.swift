@@ -310,9 +310,9 @@ let nums = [10, 20, 30, 40, 50]
 let slice = nums[1..<3]   // indices 1 and 2
 print(slice)               // [20, 30]
 
-let arr = [0, 1, 2, 3, 4]
-print(arr[...2])  // first three elements (0...2)
-print(arr[2...])  // from index 2 to the end
+//let arr = [0, 1, 2, 3, 4]
+//print(arr[...2])  // first three elements (0...2)
+//print(arr[2...])  // from index 2 to the end
 
 //let items = [10, 20, 30]
 //print(items.startIndex)       // 0
@@ -361,5 +361,19 @@ print(names.contains("Bjorn"))            // true
 if let i = names.firstIndex(of: "Stale") {
   print(i)                                 // 2
 }
+
+for n in 1...5 {
+      print(n)
+    }
+    for n in 1..<5 {
+      print(n)
+    }
+    let r = 10...12
+    print(r.contains(11))
+    print(r.contains(13))
+
+let arr = [0, 1, 2, 3, 4]
+print(arr[...2])  // first three elements (indices 0...2)
+print(arr[2...])  // from index 2 to the end
 
 
