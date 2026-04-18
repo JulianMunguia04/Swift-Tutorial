@@ -240,12 +240,12 @@ print(first + " " + second)
 // Interpolation
 print("\(first), \(second)!")
 
-let age = 5
-print("Age: \(age)")          // interpolation
-let text = "You are " + String(age)
-print(text)
-let pie = 3.14
-print("pi = \(pie)")
+//let age = 5
+//print("Age: \(age)")          // interpolation
+//let text = "You are " + String(age)
+//print(text)
+//let pie = 3.14
+//print("pi = \(pie)")
 
 let s1 = "123"
 let n1 = Int(s1)           // Int?
@@ -402,4 +402,17 @@ if speed > 50 {
   print("Slow down")
 }
 
+let hasAccess = false
+if hasAccess {
+  print("Welcome")
+} else {
+  print("Denied")
+}
+
+let age = 16
+if age >= 18 {
+  print("Access granted")
+} else {
+  print("Access denied")
+}
 
