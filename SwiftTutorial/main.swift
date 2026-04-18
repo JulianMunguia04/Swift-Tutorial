@@ -392,4 +392,14 @@ if n % 2 == 0 {
   print("Odd")
 }
 
+let temp = 25
+if temp > 20 {
+  print("Warm")
+}
+
+let speed = 55
+if speed > 50 {
+  print("Slow down")
+}
+
 
