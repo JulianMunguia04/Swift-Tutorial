@@ -376,4 +376,20 @@ let arr = [0, 1, 2, 3, 4]
 print(arr[...2])  // first three elements (indices 0...2)
 print(arr[2...])  // from index 2 to the end
 
+let score = 82
+if score >= 90 {
+  print("A")
+} else if score >= 80 {
+  print("B")
+} else {
+  print("C or lower")
+}
+
+let n = 7
+if n % 2 == 0 {
+  print("Even")
+} else {
+  print("Odd")
+}
+
 
