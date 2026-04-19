@@ -376,14 +376,14 @@ let arr = [0, 1, 2, 3, 4]
 print(arr[...2])  // first three elements (indices 0...2)
 print(arr[2...])  // from index 2 to the end
 
-let score = 82
-if score >= 90 {
-  print("A")
-} else if score >= 80 {
-  print("B")
-} else {
-  print("C or lower")
-}
+//let score = 82
+//if score >= 90 {
+//  print("A")
+//} else if score >= 80 {
+//  print("B")
+//} else {
+//  print("C or lower")
+//}
 
 let n = 7
 if n % 2 == 0 {
@@ -414,5 +414,27 @@ if age >= 18 {
   print("Access granted")
 } else {
   print("Access denied")
+}
+
+let score = 72
+if score >= 90 {
+  print("A")
+} else if score >= 80 {
+  print("B")
+} else if score >= 70 {
+  print("C")
+} else {
+  print("Below C")
+}
+
+let t = 0
+if t <= 0 {
+  print("Freezing")
+} else if t < 10 {
+  print("Cold")
+} else if t < 20 {
+  print("Cool")
+} else {
+  print("Warm")
 }
 
