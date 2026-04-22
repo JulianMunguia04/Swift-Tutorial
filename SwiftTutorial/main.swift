@@ -210,13 +210,13 @@ print((2 + 3) * 4)
 print(true || false && false)
 print((true || false) && false)
 
-let a = true
-let b = false
-let c = true
-
-print(a || b && c)         // true (&& before ||)
-print((a || b) && c)       // true
-print(a && b || c)         // true ((a && b) || c)
+//let a = true
+//let b = false
+//let c = true
+//
+//print(a || b && c)         // true (&& before ||)
+//print((a || b) && c)       // true
+//print(a && b || c)         // true ((a && b) || c)
 
 //let s1 = "Hello"
 //let s2 = "Swift"
@@ -409,12 +409,12 @@ if hasAccess {
   print("Denied")
 }
 
-let age = 16
-if age >= 18 {
-  print("Access granted")
-} else {
-  print("Access denied")
-}
+//let age = 16
+//if age >= 18 {
+//  print("Access granted")
+//} else {
+//  print("Access denied")
+//}
 
 let score = 72
 if score >= 90 {
@@ -438,3 +438,10 @@ if t <= 0 {
   print("Warm")
 }
 
+let age = 20
+let status = (age >= 18) ? "Adult" : "Minor"
+print(status)
+
+let a = 5, b = 9
+let min = (a < b) ? a : b
+print(min)
