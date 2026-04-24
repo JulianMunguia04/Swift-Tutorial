@@ -191,10 +191,10 @@ print("apple" < "banana")  // true
 print("Swift" == "Swift")  // true
 print("cat" > "car")       // true
 
-let isOwner = true
-let isAdmin = false
-print(isOwner && isAdmin)
-print(true && true)
+//let isOwner = true
+//let isAdmin = false
+//print(isOwner && isAdmin)
+//print(true && true)
 
 //let a = true
 //let b = false
@@ -416,16 +416,16 @@ if hasAccess {
 //  print("Access denied")
 //}
 
-let score = 72
-if score >= 90 {
-  print("A")
-} else if score >= 80 {
-  print("B")
-} else if score >= 70 {
-  print("C")
-} else {
-  print("Below C")
-}
+//let score = 72
+//if score >= 90 {
+//  print("A")
+//} else if score >= 80 {
+//  print("B")
+//} else if score >= 70 {
+//  print("C")
+//} else {
+//  print("Below C")
+//}
 
 let t = 0
 if t <= 0 {
@@ -445,3 +445,28 @@ print(status)
 let a = 5, b = 9
 let min = (a < b) ? a : b
 print(min)
+
+let isLoggedIn = true
+let isAdmin = false
+if isLoggedIn {
+    if isAdmin {
+      print("Admin panel")
+    } else {
+      print("Limited access")
+    }
+  }
+
+let score = 85
+if score >= 0 && score <= 100 {
+  if score >= 90 {
+    print("A")
+  } else if score >= 80 {
+    print("B")
+  } else if score >= 70 {
+    print("C")
+  } else {
+    print("Below C")
+  }
+} else {
+  print("Invalid score")
+}
