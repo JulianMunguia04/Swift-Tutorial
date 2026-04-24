@@ -470,3 +470,16 @@ if score >= 0 && score <= 100 {
 } else {
   print("Invalid score")
 }
+
+//let isMember = true
+//let hasCoupon = false
+//if isMember || hasCoupon {
+//  print("Discount applied")
+//}
+
+let isMember = true
+let expired = false
+if isMember && !expired {
+  print("Active member")
+}
+
