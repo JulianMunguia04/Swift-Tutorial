@@ -483,3 +483,25 @@ if isMember && !expired {
   print("Active member")
 }
 
+let grade = 82
+switch grade {
+case 90...100:
+  print("A")
+case 80..<90:
+  print("B")
+case 70..<80:
+  print("C")
+default:
+  print("Below C")
+}
+
+let command = "start"
+switch command {
+case "start":
+  print("Starting")
+case "stop":
+  print("Stopping")
+default:
+  print("Unknown")
+}
+
