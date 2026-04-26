@@ -385,12 +385,12 @@ print(arr[2...])  // from index 2 to the end
 //  print("C or lower")
 //}
 
-let n = 7
-if n % 2 == 0 {
-  print("Even")
-} else {
-  print("Odd")
-}
+//let n = 7
+//if n % 2 == 0 {
+//  print("Even")
+//} else {
+//  print("Odd")
+//}
 
 let temp = 25
 if temp > 20 {
@@ -505,3 +505,15 @@ default:
   print("Unknown")
 }
 
+var n = 3
+while n > 0 {
+  print(n)
+  n -= 1
+}
+print("Liftoff!")
+
+var attempts = 0
+repeat {
+  attempts += 1
+  print("Attempt #\(attempts)")
+} while attempts < 3
