@@ -306,9 +306,9 @@ fruits.enumerated().forEach { print("\($0.offset): \($0.element)") }
 //let copy = Array(middle)          // Array<Int>
 //print(copy)
 
-let nums = [10, 20, 30, 40, 50]
-let slice = nums[1..<3]   // indices 1 and 2
-print(slice)               // [20, 30]
+//let nums = [10, 20, 30, 40, 50]
+//let slice = nums[1..<3]   // indices 1 and 2
+//print(slice)               // [20, 30]
 
 //let arr = [0, 1, 2, 3, 4]
 //print(arr[...2])  // first three elements (0...2)
@@ -517,3 +517,17 @@ repeat {
   attempts += 1
   print("Attempt #\(attempts)")
 } while attempts < 3
+
+for i in 1...3 {
+  print(i)
+}
+
+let nums = [10, 20, 30]
+for n in nums {
+  print(n)
+}
+for (index, value) in nums.enumerated() {
+  print("index: \(index), value: \(value)")
+}
+
+
