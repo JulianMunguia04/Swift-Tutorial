@@ -324,10 +324,10 @@ fruits.enumerated().forEach { print("\($0.offset): \($0.element)") }
 //print(items[0])   // OK
 //// print(items[3]) // out of bounds
 
-let items = [10, 20, 30]
-let lastIndex = items.index(before: items.endIndex)
-print(lastIndex)        // 2
-print(items[lastIndex]) // 30
+//let items = [10, 20, 30]
+//let lastIndex = items.index(before: items.endIndex)
+//print(lastIndex)        // 2
+//print(items[lastIndex]) // 30
 
 //var grid = [
 //  [1, 2, 3],
@@ -543,3 +543,9 @@ for i in 1...3 {
   }
   print(row)
 }
+
+["A","B","C"].forEach { print($0) }
+
+let items = ["A","B","C"]
+items.enumerated().forEach { print("\($0.offset): \($0.element)") }
+
