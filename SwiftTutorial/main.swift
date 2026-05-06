@@ -522,13 +522,13 @@ for i in 1...3 {
   print(i)
 }
 
-let nums = [10, 20, 30]
-for n in nums {
-  print(n)
-}
-for (index, value) in nums.enumerated() {
-  print("index: \(index), value: \(value)")
-}
+//let nums = [10, 20, 30]
+//for n in nums {
+//  print(n)
+//}
+//for (index, value) in nums.enumerated() {
+//  print("index: \(index), value: \(value)")
+//}
 
 for i in 1...2 {
   for j in 1...3 {
@@ -558,4 +558,14 @@ for i in 1...5 {
   if i % 2 == 0 { continue }
   print(i) // only odd numbers
 }
+
+var nums: [Int] = [1, 2, 3]
+nums.append(4)
+print(nums.count)    // 4
+print(nums[0])       // 1
+
+var ages: [String: Int] = ["Kai": 30]
+ages["Elisabeth"] = 25
+print(ages["Kai"] ?? 0)
+
 
