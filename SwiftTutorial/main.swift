@@ -549,3 +549,13 @@ for i in 1...3 {
 let items = ["A","B","C"]
 items.enumerated().forEach { print("\($0.offset): \($0.element)") }
 
+for i in 1...10 {
+  if i == 4 { break }
+  print(i)
+}
+
+for i in 1...5 {
+  if i % 2 == 0 { continue }
+  print(i) // only odd numbers
+}
+
