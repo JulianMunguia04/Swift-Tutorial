@@ -442,9 +442,9 @@ let age = 20
 let status = (age >= 18) ? "Adult" : "Minor"
 print(status)
 
-let a = 5, b = 9
-let min = (a < b) ? a : b
-print(min)
+//let a = 5, b = 9
+//let min = (a < b) ? a : b
+//print(min)
 
 let isLoggedIn = true
 let isAdmin = false
@@ -568,4 +568,11 @@ var ages: [String: Int] = ["Kai": 30]
 ages["Elisabeth"] = 25
 print(ages["Kai"] ?? 0)
 
+var letters: Set<Character> = ["a", "b", "a"]
+print(letters.contains("a"))
 
+let a: Set<Int> = [1, 2, 3]
+let b: Set<Int> = [3, 4]
+print(a.union(b).sorted())         // [1, 2, 3, 4]
+print(a.intersection(b).sorted())  // [3]
+print(a.subtracting(b).sorted())   // [1, 2]
