@@ -564,9 +564,9 @@ nums.append(4)
 print(nums.count)    // 4
 print(nums[0])       // 1
 
-var ages: [String: Int] = ["Kai": 30]
-ages["Elisabeth"] = 25
-print(ages["Kai"] ?? 0)
+//var ages: [String: Int] = ["Kai": 30]
+//ages["Elisabeth"] = 25
+//print(ages["Kai"] ?? 0)
 
 var letters: Set<Character> = ["a", "b", "a"]
 print(letters.contains("a"))
@@ -576,3 +576,14 @@ let b: Set<Int> = [3, 4]
 print(a.union(b).sorted())         // [1, 2, 3, 4]
 print(a.intersection(b).sorted())  // [3]
 print(a.subtracting(b).sorted())   // [1, 2]
+
+//var ages: [String: Int] = ["Kai": 30]
+//ages["Elisabeth"] = 25
+//print(ages["Kai"] ?? 0)
+
+let ages = ["Kai": 30, "Elisabeth": 25]
+for k in ages.keys.sorted() {
+  print("\(k): \(ages[k]!)")
+}
+
+
