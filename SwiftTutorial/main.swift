@@ -165,15 +165,15 @@ print(7 % 3)   // 1
 print(8 % 2)   // 0
 print(10 % 6)  // 4
 
-var total = 10
-total += 5
-print(total)
-total -= 3
-print(total)
-total *= 2
-print(total)
-total /= 4
-print(total)
+//var total = 10
+//total += 5
+//print(total)
+//total -= 3
+//print(total)
+//total *= 2
+//print(total)
+//total /= 4
+//print(total)
 
 var s = "Hello"
 //s += ", Swift"
@@ -559,10 +559,10 @@ for i in 1...5 {
   print(i) // only odd numbers
 }
 
-var nums: [Int] = [1, 2, 3]
-nums.append(4)
-print(nums.count)    // 4
-print(nums[0])       // 1
+//var nums: [Int] = [1, 2, 3]
+//nums.append(4)
+//print(nums.count)    // 4
+//print(nums[0])       // 1
 
 //var ages: [String: Int] = ["Kai": 30]
 //ages["Elisabeth"] = 25
@@ -586,4 +586,15 @@ for k in ages.keys.sorted() {
   print("\(k): \(ages[k]!)")
 }
 
+let nums = [1, 2, 3, 4]
+let doubled = nums.map { $0 * 2 }
+print(doubled)
+let evens = nums.filter { $0 % 2 == 0 }
+print(evens)
+let sum = nums.reduce(0, +)
+print(sum)
 
+let raw = ["1", "x", "2", "3"]
+let ints = raw.compactMap { Int($0) }   // [1, 2, 3]
+let total = ints.reduce(0, +)
+print(total)
