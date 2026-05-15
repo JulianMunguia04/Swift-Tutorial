@@ -372,9 +372,9 @@ for n in 1...5 {
     print(r.contains(11))
     print(r.contains(13))
 
-let arr = [0, 1, 2, 3, 4]
-print(arr[...2])  // first three elements (indices 0...2)
-print(arr[2...])  // from index 2 to the end
+//let arr = [0, 1, 2, 3, 4]
+//print(arr[...2])  // first three elements (indices 0...2)
+//print(arr[2...])  // from index 2 to the end
 
 //let score = 82
 //if score >= 90 {
@@ -618,3 +618,15 @@ print(bag.count)
 var user = ["name": "Kai"]
 user["city"] = "Oslo"
 print(user.count)
+
+//let arr = [1, 2, 3]
+//print(arr.count)
+//print(arr.isEmpty)
+//let st: Set<Int> = [1, 2, 3]
+//print(st.contains(2))
+//print(st.isEmpty)
+
+let arr = [10, 20, 30]
+for i in arr.indices {
+  print("index: \(i), value: \(arr[i])")
+}
