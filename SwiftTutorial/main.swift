@@ -609,3 +609,12 @@ let names = ["bob", "Alice", "dave"]
 let caseInsensitive = names.sorted { $0.lowercased() < $1.lowercased() }
 print(caseInsensitive) // ["Alice", "bob", "dave"]
 
+let fixedArray = [1, 2]
+print(fixedArray.count)
+var bag = [1, 2]
+bag.append(3)
+print(bag.count)
+
+var user = ["name": "Kai"]
+user["city"] = "Oslo"
+print(user.count)
