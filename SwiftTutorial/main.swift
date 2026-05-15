@@ -630,3 +630,11 @@ let arr = [10, 20, 30]
 for i in arr.indices {
   print("index: \(i), value: \(arr[i])")
 }
+
+func greet(name: String) -> String {
+  return "Hello, \(name)!"
+}
+print(greet(name: "Swift"))
+
+func add(_ a: Int, _ b: Int) -> Int { a + b }
+print(add(2, 3))
