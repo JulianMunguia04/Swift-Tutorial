@@ -42,9 +42,9 @@ print(constant, counter)
 //let x = 10
 //let y: Int = 20
 
-var nickname: String? = nil
-nickname = "KJ"
-print(nickname ?? "None")
+//var nickname: String? = nil
+//nickname = "KJ"
+//print(nickname ?? "None")
 
 //let first = "Hello"
 //let second = "Swift"
@@ -638,3 +638,22 @@ print(greet(name: "Swift"))
 
 func add(_ a: Int, _ b: Int) -> Int { a + b }
 print(add(2, 3))
+
+var nickname: String? = nil
+print(nickname ?? "(none)")
+
+nickname = "Ace"
+if let name = nickname {
+  print(name)
+}
+
+func greet(_ input: String?) {
+  guard let name = input else {
+    print("Missing name")
+    return
+  }
+  print("Hello, \(name)")
+}
+
+greet(nil)
+greet("Swift")
