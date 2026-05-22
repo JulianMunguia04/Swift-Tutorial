@@ -657,3 +657,16 @@ func greet(_ input: String?) {
 
 greet(nil)
 greet("Swift")
+
+enum Direction { case north, south, east, west }
+
+let d: Direction = .east
+print(d)
+
+enum Barcode {
+  case upc(Int, Int, Int, Int)
+  case qr(String)
+}
+
+let b1 = Barcode.upc(8, 85909, 51226, 3)
+let b2 = Barcode.qr("HELLO")
