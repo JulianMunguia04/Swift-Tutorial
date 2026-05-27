@@ -599,11 +599,11 @@ let ints = raw.compactMap { Int($0) }   // [1, 2, 3]
 let total = ints.reduce(0, +)
 print(total)
 
-var nums = [3, 1, 2]
-let ascending = nums.sorted()
-print(ascending)      // [1, 2, 3]
-nums.sort(by: >)
-print(nums)           // [3, 2, 1]
+//var nums = [3, 1, 2]
+//let ascending = nums.sorted()
+//print(ascending)      // [1, 2, 3]
+//nums.sort(by: >)
+//print(nums)           // [3, 2, 1]
 
 let names = ["bob", "Alice", "dave"]
 let caseInsensitive = names.sorted { $0.lowercased() < $1.lowercased() }
@@ -670,3 +670,21 @@ enum Barcode {
 
 let b1 = Barcode.upc(8, 85909, 51226, 3)
 let b2 = Barcode.qr("HELLO")
+
+let nums = [3, 1, 2]
+let sorted = nums.sorted { $0 < $1 }
+let strings = sorted.map { "#\($0)" }
+print(strings) // ["#1", "#2", "#3"]
+
+func makeCounter() -> () -> Int {
+  var n = 0
+  return {
+    n += 1
+    return n
+  }
+}
+
+let next = makeCounter()
+print(next()) // 1
+print(next()) // 2
+
