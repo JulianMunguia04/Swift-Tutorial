@@ -705,3 +705,17 @@ func parse(_ data: Data) -> JSON { return [:] }
 func save(completion: Completion) {
   completion(.success(()))
 }
+
+struct Point { var x: Int; var y: Int }
+var p1 = Point(x: 1, y: 2)
+var p2 = p1      // copy
+p2.x = 10
+print(p1.x)      // 1
+print(p2.x)      // 10
+
+class Counter { var value = 0 }
+let c1 = Counter()
+let c2 = c1      // reference
+c2.value = 5
+print(c1.value)  // 5
+
