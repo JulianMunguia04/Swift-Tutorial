@@ -749,3 +749,11 @@ p2.x = 9 // p1.x remains 1
 
 let c1 = Counter(), c2 = c1 // same instance
 c2.value = 7 // c1.value is 7
+
+class User {
+  var name: String // stored
+  var greeting: String { "Hello, \(name)" } // computed
+  static var appName = "MyApp" // type property
+  init(name: String) { self.name = name }
+}
+
