@@ -736,3 +736,8 @@ let acc = BankAccount(balance: 100)
 acc.deposit(25)
 print(acc.balance) // 125
 
+struct Point { var x: Int; var y: Int }
+var p1 = Point(x: 1, y: 2)
+var p2 = p1 // copy
+p2.x = 10
+
