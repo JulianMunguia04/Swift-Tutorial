@@ -876,3 +876,17 @@ extension User: Describable {
 }
 
 print(User(name: "Morgan").describe())
+
+public struct APIClient {
+  public init() {}
+  public func request() {}
+}
+
+struct Repository { // internal by default
+  fileprivate var cache: [String: String] = [:]
+  private func reset() { cache.removeAll() }
+}
+
+internal struct Box { // whole type is internal
+  public var value: Int // warning/error: member more visible than type
+}
