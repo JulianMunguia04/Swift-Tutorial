@@ -859,3 +859,20 @@ func minValue<T: Comparable>(_ a: T, _ b: T) -> T { a < b ? a : b }
 print(minValue(3, 7))        // 3
 print(minValue("b", "a"))  // a
 
+extension String {
+  var isBlank: Bool { trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+  func repeated(_ n: Int) -> String { String(repeating: self, count: n) }
+}
+
+print("  ".isBlank)    // true
+print("Hi".repeated(3)) // HiHiHi
+
+protocol Describable { func describe() -> String }
+
+struct User { let name: String }
+
+extension User: Describable {
+  func describe() -> String { "User(\(name))" }
+}
+
+print(User(name: "Morgan").describe())
