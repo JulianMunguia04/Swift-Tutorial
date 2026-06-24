@@ -912,3 +912,10 @@ class Person {
 let p1 = Person(name: "Robin", age: 30)
 let p2 = Person(name: "Elisabeth")
 
+class FileHandle {
+  init() { print("open") }
+  deinit { print("close") }
+}
+
+var h: FileHandle? = FileHandle()
+h = nil // prints "close"
